@@ -28,13 +28,6 @@ namespace lsmsapp1.Controllers
             return Ok();
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
         // POST api/values
         [HttpPost("{bucketName}")]
         public async Task<IActionResult> CreateBucket([FromRoute] string bucketName)
